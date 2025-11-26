@@ -28,8 +28,8 @@ include '../template/header.php';
                 </div>
             </div>
             <div class="mb-3">
-                <label>Isi Berita</label>
-                <textarea name="isi_berita" class="form-control" rows="5"></textarea>
+                <label class="fw-bold mb-2">Isi Berita</label>
+                <textarea name="isi_berita" id="editor" class="form-control" rows="10"></textarea>
             </div>
             <button type="submit" name="simpan" class="btn btn-primary">Publish</button>
             <a href="index.php" class="btn btn-secondary">Batal</a>

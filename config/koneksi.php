@@ -12,5 +12,5 @@ if (!$koneksi) {
 
 // BASE URL: Ganti sesuai nama folder di htdocs Anda
 // Wajib diakhiri garis miring '/'
-$base_url = "http://localhost/sigermedia/";
+$base_url = "http://192.168.81.15/sigermedia/";
 ?>

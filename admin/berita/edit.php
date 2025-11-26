@@ -33,8 +33,8 @@ $data = mysqli_fetch_array(mysqli_query($koneksi, "SELECT * FROM berita WHERE id
                 </div>
             </div>
             <div class="mb-3">
-                <label>Isi Berita</label>
-                <textarea name="isi_berita" class="form-control" rows="5"><?= $data['isi_berita'] ?></textarea>
+                <label class="fw-bold mb-2">Isi Berita</label>
+                <textarea name="isi_berita" id="editor" class="form-control" rows="10"><?= $data['isi_berita'] ?></textarea>
             </div>
             <button type="submit" name="update" class="btn btn-primary">Update</button>
             <a href="index.php" class="btn btn-secondary">Batal</a>
