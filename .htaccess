@@ -1,0 +1,18 @@
+RewriteEngine On
+
+# Sesuaikan folder project Anda. Jika di htdocs/sigermedia, maka tulis /sigermedia/
+RewriteBase /sigermedia/
+
+# Cegah akses langsung ke file .htaccess
+<Files .htaccess>
+    Order allow,deny
+    Deny from all
+</Files>
+
+# 1. Rewrite URL Detail Berita
+# Pola: domain.com/detail/12/judul-berita-heboh -> detail.php?id=12
+RewriteRule ^detail/([0-9]+)/([a-zA-Z0-9-]+)/?$ detail.php?id=$1 [L,QSA]
+
+# 2. Rewrite URL Kategori
+# Pola: domain.com/kategori/5/teknologi -> kategori.php?id=5
+RewriteRule ^kategori/([0-9]+)/([a-zA-Z0-9-]+)/?$ kategori.php?id=$1 [L,QSA]
